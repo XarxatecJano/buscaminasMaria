@@ -100,7 +100,7 @@ function placeFlag(row, col){
     const cell = boardArray[row][col];
     const cellElement = document.querySelector(`[data-row="${row}"][data-column="${col}"]`);
     if(!cell.revealed){
-        if(cellElement.innerHTML=""){
+        if(cellElement.innerHTML==""){
             cellElement.innerHTML="🚩";
             flagArray.push({row,col});
         }
